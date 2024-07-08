@@ -8,6 +8,14 @@ use Config;
 
 class ImageFieldLocal implements ImageFieldInerface
 {
+	public $medium;
+    	public $thumbnail;
+	public $original;
+    	public $xsmall;
+    	public $small;
+    	public $large;
+    	public $profile;
+	
 	public function __construct($dimensions=[])
 	{
 		if(count($dimensions) < 1){
